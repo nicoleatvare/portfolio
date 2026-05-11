@@ -4,8 +4,15 @@ function createPetal() {
     petal.src = "/static/images/petal.png";
     petal.classList.add("petal");
 
-    petal.style.left = Math.random() * window.innerWidth + "px";
-    petal.style.width = Math.random() * 20 + 20 + "px";
+    const side = Math.random() < 0.5;
+
+    if (side) {
+        petal.style.left = Math.random() * 150 + "px";
+    } else {
+        petal.style.left = window.innerWidth - Math.random() * 150 + "px";
+    }
+
+    petal.style.width = Math.random() * 20 + 15 + "px";
     petal.style.animationDuration = Math.random() * 5 + 5 + "s";
 
     document.body.appendChild(petal);
