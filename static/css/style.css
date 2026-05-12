@@ -64,11 +64,39 @@ body {
     padding-bottom: 80px;
 }
 
+.hero-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero-heading h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 72px;
+    color: #5c3a4d;
+    margin-bottom: 10px;
+}
+
+.heading-gif {
+    width: 280px;
+    opacity: 0.85;
+    pointer-events: none;
+}
+
+.hero-heading p {
+    color: #d94f91;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.hero-divider {
+    width: 40px;
+    margin-top: 15px;
+}
 
 .card {
     width: 80%;
     max-width: 700px;
-    margin: 100px auto;
+    margin: 80px auto;
     padding: 40px;
     background: white;
     border-radius: 25px;
@@ -128,6 +156,17 @@ body {
 
 .contact-card p {
     margin: 0;
+    color: #d94f91;
+}
+
+.contact-card a {
+    text-decoration: none;
+    color: #d94f91;
+    font-weight: 600;
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+    display: inline-block;
 }
 
 .text {
