@@ -98,6 +98,38 @@ body {
     object-fit: cover;
 }
 
+.social-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    border-radius: 0;
+    flex-shrink: 0;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 100%;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff8fc;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.contact-card h3 {
+    margin: 0;
+}
+
+.contact-card p {
+    margin: 0;
+}
+
 .text {
     text-align: left;
 }
